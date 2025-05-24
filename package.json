@@ -1,0 +1,53 @@
+{
+  "name": "react-fortune-roulette",
+  "description": "A fork of react-roulette-game adapted for modern React versions and extended functionality",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dmitriy-morozov/react-fortune-roulette"
+  },
+  "keywords": [
+    "react",
+    "fortune",
+    "roulette",
+    "wheel",
+    "spin",
+    "lucky",
+    "prize",
+    "framer-motion",
+    "animation",
+    "typescript",
+    "react-wheel",
+    "reward",
+    "fork",
+    "react-roulette-game"
+  ],
+  "version": "1.0.1",
+  "main": "dist/Roulette.js",
+  "types": "dist/Roulette.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/Roulette.js",
+      "types": "./dist/Roulette.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && copyfiles -f src/roulette.css dist",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test",
+    "test": "echo \"No tests yet\""
+  },
+  "peerDependencies": {
+    "framer-motion": ">=11 <13",
+    "react": "^18.0.0"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^19.1.5",
+    "@types/react-dom": "^19.1.5",
+    "copyfiles": "^2.4.1",
+    "typescript": "^5.8.3"
+  }
+}
