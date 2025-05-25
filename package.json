@@ -3,7 +3,7 @@
   "description": "A fork of react-roulette-game adapted for modern React versions and extended functionality",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dmitriy-morozov/react-fortune-roulette"
+    "url": "git+https://github.com/dmitriy-morozov/react-fortune-roulette.git"
   },
   "keywords": [
     "react",
@@ -21,7 +21,7 @@
     "fork",
     "react-roulette-game"
   ],
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/Roulette.js",
   "types": "dist/Roulette.d.ts",
   "exports": {

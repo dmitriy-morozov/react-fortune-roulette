@@ -9,6 +9,11 @@ systems, promotions, and mini-games.
 > - framer-motion v11+
 > - Better UX & structure
 
+## 🚀 Demo
+
+▶ **Try it live**:  
+👉 [https://dmitriy-morozov.github.io/react-fortune-roulette-demo/](https://dmitriy-morozov.github.io/react-fortune-roulette-demo/)
+
 
 ## ✨ Features
 
@@ -72,34 +77,38 @@ const App = () => {
 
 
 ### wheelImageBase
-usage: roulette's body image, its zIndex is smaller than highlight;      
+usage: roulette's body image, its zIndex is smaller than highlight;
 HIGHLY RECOMMENDED: the ratio of this image should be square
-![Preview](./assets/wheel_image_base.png)
 
+<img src="https://raw.githubusercontent.com/dmitriy-morozov/react-fortune-roulette/refs/heads/master/assets/wheel_image_base.png" alt="wheel_image_base" width="400" />
 
 ### wheelImageOverlay
-usage: roulette's body image, its zIndex is bigger than highlight;      
+usage: roulette's body image, its zIndex is bigger than highlight;
 HIGHLY RECOMMENDED: the ratio of this image should be square
-![Preview](./assets/wheel_image_overlay.png)
+
+<img src="https://raw.githubusercontent.com/dmitriy-morozov/react-fortune-roulette/refs/heads/master/assets/wheel_image_overlay.png" alt="wheel_image_overlay" width="400" />
 
 ### highlightImage 
 usage: when roulette rotate over, hightlight will bling bling, its purpose is to highlight the winning-prize;      
 HIGHLY RECOMMENDED: the ratio of this image should be square
-![Preview](./assets/highlight.png)
 
+<img src="https://raw.githubusercontent.com/dmitriy-morozov/react-fortune-roulette/refs/heads/master/assets/highlight.png" alt="highlight" width="400" />
 
-#### PS1: you can put your roulette's body image on one of them or both; just due to different design, something will be under the highlight and something will be on the highlight, so let you have more option to combine your roulette
-#### PS2: your roulette should put like this: ![Preview](./assets/correct.jpeg) not like this: ![Preview](./assets/incorrect.jpeg)
-
-
-
-### pointerImage 
+### pointerImage
 usage: roulette's pointer, to point the winning-prize;       
 HIGHLY RECOMMENDED: the ratio of this image should be square
-![Preview](./assets/pointer.png)
 
-#### PS: the prize you win always on top, like this:![Preview](./assets/pointer.jpeg), so your pointer should always point toward that one
+<img src="https://raw.githubusercontent.com/dmitriy-morozov/react-fortune-roulette/refs/heads/master/assets/pointer.png" alt="Preview" width="400" />
 
+#### PS1: you can put your roulette's body image on one of them or both; just due to different design, something will be under the highlight and something will be on the highlight, so let you have more option to combine your roulette
+#### PS2: your roulette should put like this: 
+<img src="https://raw.githubusercontent.com/dmitriy-morozov/react-fortune-roulette/refs/heads/master/assets/correct.jpeg" alt="Correct" width="500" />
+
+#### not like this:
+<img src="https://raw.githubusercontent.com/dmitriy-morozov/react-fortune-roulette/refs/heads/master/assets/incorrect.jpeg" alt="Incorrect" width="500" />
+
+#### PS: the prize you win always on top, so your pointer should always point toward that one, like this:
+<img src="https://raw.githubusercontent.com/dmitriy-morozov/react-fortune-roulette/refs/heads/master/assets/pointer.jpeg" alt="Preview" width="500" />
 
 
 ## 🎨 Styling
