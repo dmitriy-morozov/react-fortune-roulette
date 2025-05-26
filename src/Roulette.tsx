@@ -4,6 +4,7 @@ import "./roulette.css";
 
 export type RouletteProps = {
   onStart?: () => void;
+  onTryAgain?: () => void;
   onComplete?: (prize: string) => void;
   onReceiveGift?: (prize: string) => void;
   startText?: string;
@@ -21,6 +22,8 @@ export type RouletteProps = {
 
 export const Roulette = ({
                            onStart = () => {
+                           },
+                           onTryAgain = () => {
                            },
                            onComplete = () => {
                            },
@@ -92,6 +95,7 @@ export const Roulette = ({
 
   const handleTryAgain = () => {
     if (!showTryAgain) return;
+    onTryAgain();
     setSpinning(true);
     setShowTryAgain(false);
   };

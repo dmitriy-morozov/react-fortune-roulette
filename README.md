@@ -73,6 +73,7 @@ const App = () => {
 | `tryAgainText`            | `string`                  | `"Try Again"`      | Label text for the Try Again button.                                                                                                        |
 | `receiveGiftText`         | `string`                  | `"Receive a gift"` | Label text for the Receive Gift button.                                                                                                     |
 | `onStart`                 | `() => void`              | `() => {}`         | Callback triggered when the spin begins.                                                                                                    |
+| `onTryAgain`              | `() => void`              | `() => {}`         | Callback triggered when the Try Again spin begins.                                                                                          |
 | `onComplete`              | `(prize: string) => void` | `() => {}`         | Callback triggered when the spin ends and a prize is selected.                                                                              |
 | `onReceiveGift`           | `(prize: string) => void` | `() => {}`         | Callback triggered when the user receives a gift (if not `"try_again"`).                                                                    |
 
