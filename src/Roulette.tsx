@@ -16,6 +16,7 @@ export type RouletteProps = {
   prizeList: string[];
   spinsLimit?: number;
   duration?: number;
+  isShowReceiveGiftButton?: boolean
 };
 
 export const Roulette = ({
@@ -35,6 +36,7 @@ export const Roulette = ({
                            prizeList,
                            spinsLimit = 1,
                            duration = 6,
+                           isShowReceiveGiftButton = true,
                          }: RouletteProps) => {
   const [spinCount, setSpinCount] = useState(0);
   const [spinning, setSpinning] = useState(false);
@@ -101,6 +103,8 @@ export const Roulette = ({
     }
   };
 
+  const isReceiveGiftButtonVisible = isShowReceiveGiftButton && wonPrize && wonPrize !== "try_again" && !spinning;
+
   return (
     <div className="roulette-container">
       <div className="roulette-box">
@@ -132,7 +136,7 @@ export const Roulette = ({
             type="button"
             onClick={handleTryAgain}
           >
-            {tryAgainText}
+            <span>{tryAgainText}</span>
           </button>
         ) : !spinning && canSpin ? (
           <button
@@ -140,17 +144,17 @@ export const Roulette = ({
             type="button"
             onClick={handleStart}
           >
-            {startText}
+            <span>{startText}</span>
           </button>
         ) : null}
 
-        {wonPrize && wonPrize !== "try_again" && !spinning && (
+        {isReceiveGiftButtonVisible && (
           <button
             className="roulette-btn gift-btn"
             type="button"
             onClick={handleReceiveGift}
           >
-            {receiveGiftText}
+            <span>{receiveGiftText}</span>
           </button>
         )}
       </div>

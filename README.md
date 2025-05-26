@@ -59,22 +59,22 @@ const App = () => {
 
 ## 📌 Props
 
-| Prop                | Type                      | Default            | Description                                                                                                                |
-|---------------------|---------------------------|--------------------|----------------------------------------------------------------------------------------------------------------------------|
-| `wheelImageBase`    | `string`                  | **required**       | Background image of the base wheel.                                                                                        |
-| `wheelImageOverlay` | `string`                  | **required**       | Foreground overlay image of the wheel.                                                                                     |
-| `highlightImage`    | `string`                  | **required**       | Image shown as blinking highlight effect after spinning.                                                                   |
-| `pointerImage`      | `string`                  | **required**       | Static pointer image placed on top of the wheel.                                                                           |
-| `prizeList`         | `string[]`                | **required**       | Array of prize values, the order is counter-clockwise to your roulette. Include `"try_again"` to enable "Try Again" logic. |
-| `spinsLimit`        | `number`                  | `1`                | Number of spins allowed. `undefined` for unlimited spins.                                                                  |
-| `duration`          | `number`                  | `6`                | Duration of the total spin animation (in seconds).                                                                         |
-| `startText`         | `string`                  | `"Start!"`         | Label text for the Start button.                                                                                           |
-| `tryAgainText`      | `string`                  | `"Try Again"`      | Label text for the Try Again button.                                                                                       |
-| `receiveGiftText`   | `string`                  | `"Receive a gift"` | Label text for the Receive Gift button.                                                                                    |
-| `onStart`           | `() => void`              | `() => {}`         | Callback triggered when the spin begins.                                                                                   |
-| `onComplete`        | `(prize: string) => void` | `() => {}`         | Callback triggered when the spin ends and a prize is selected.                                                             |
-| `onReceiveGift`     | `(prize: string) => void` | `() => {}`         | Callback triggered when the user receives a gift (if not `"try_again"`).                                                   |
-
+| Prop                      | Type                      | Default            | Description                                                                                                                                 |
+|---------------------------|---------------------------|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
+| `wheelImageBase`          | `string`                  | **required**       | Background image of the base wheel.                                                                                                         |
+| `wheelImageOverlay`       | `string`                  | **required**       | Foreground overlay image of the wheel.                                                                                                      |
+| `highlightImage`          | `string`                  | **required**       | Image shown as blinking highlight effect after spinning.                                                                                    |
+| `pointerImage`            | `string`                  | **required**       | Static pointer image placed on top of the wheel.                                                                                            |
+| `prizeList`               | `string[]`                | **required**       | Array of prize values, the order is counter-clockwise to your roulette. Include `"try_again"` to enable "Try Again" logic.                  |
+| `spinsLimit`              | `number`                  | `1`                | Number of spins allowed.                                                                                                                    |
+| `duration`                | `number`                  | `6`                | Duration of the total spin animation (in seconds).                                                                                          |
+| `isShowReceiveGiftButton` | `boolean`                 | `true`             | Whether to show the "Receive Gift" button after spinning. If `false`, the gift should be handled directly inside the `onComplete` callback. |
+| `startText`               | `string`                  | `"Start!"`         | Label text for the Start button.                                                                                                            |
+| `tryAgainText`            | `string`                  | `"Try Again"`      | Label text for the Try Again button.                                                                                                        |
+| `receiveGiftText`         | `string`                  | `"Receive a gift"` | Label text for the Receive Gift button.                                                                                                     |
+| `onStart`                 | `() => void`              | `() => {}`         | Callback triggered when the spin begins.                                                                                                    |
+| `onComplete`              | `(prize: string) => void` | `() => {}`         | Callback triggered when the spin ends and a prize is selected.                                                                              |
+| `onReceiveGift`           | `(prize: string) => void` | `() => {}`         | Callback triggered when the user receives a gift (if not `"try_again"`).                                                                    |
 
 ### wheelImageBase
 usage: roulette's body image, its zIndex is smaller than highlight;

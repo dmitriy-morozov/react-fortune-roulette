@@ -21,7 +21,7 @@
     "fork",
     "react-roulette-game"
   ],
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "dist/Roulette.js",
   "types": "dist/Roulette.d.ts",
   "exports": {
